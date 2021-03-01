@@ -1,0 +1,139 @@
+:root {
+  /* Primary */
+  --dark_cyan: hsl(185, 75%, 39%);
+  --dark_blue: hsl(229, 23%, 23%);
+  --dark_grayish_blue: hsl(227, 10%, 46%);
+  /* Neutral */
+  --dark_gray: hsl(0, 0%, 59%);
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  background: var(--dark_cyan);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  background-image: url(images/bg-pattern-bottom.svg),
+    url(images/bg-pattern-top.svg);
+  background-position: left 50vw top 50vh, right 50vw bottom 50vh;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+span,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* end of resets */
+
+/* attribution */
+.attribution {
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: auto;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  padding: 0.2rem;
+}
+
+/* wrapper */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  height: 100vh;
+}
+
+.bg {
+  width: 100%;
+}
+
+/* container */
+.container {
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.container .user {
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 13rem;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+hr {
+  background-color: var(--dark_gray);
+}
+.container .age,
+.city,
+.engagement {
+  color: var(--dark_gray);
+}
+
+.engagement {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.value {
+  font-weight: 700;
+}
+
+.container .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em 0;
+  margin-top: 2.5rem;
+}
+
+.name .city {
+  margin-top: 10px;
+}
+
+/* details */
+.container .user_details {
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container .user_details .detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
